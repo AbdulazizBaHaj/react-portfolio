@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // --- DATA ---
 const resumeData = {
   name: "Abdulaziz Ba Haj",
-  title: "Front-End Developer",
+  title: "Front-End Developer (Angular, React)",
   contact: {
     phone: "+966 50 193-8374",
     email: "abdulazizbahajworks@gmail.com",

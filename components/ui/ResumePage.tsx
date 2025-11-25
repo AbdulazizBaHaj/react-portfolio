@@ -76,6 +76,15 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
     "CCNA: Introduction to Networks, Cisco (2021)",
     "Responsive Web Design, freeCodeCamp (2022)",
   ],
+  projects: [
+    {
+      name: "Youtube Clone",
+      description:
+        "A recreation of YouTube's video watch page interface built entirely with HTML and CSS. This project demonstrates advanced front-end development skills including responsive design, Flexbox layouts, and modern CSS techniques.",
+      techStack: ["HTML", "CSS"],
+      githubLink: "https://github.com/AbdulazizBaHaj/youtube-clone",
+    },
+  ],
 };
 
 // --- ICONS ---
@@ -421,6 +430,84 @@ export default function ResumePage() {
                 <li key={index}>{award}</li>
               ))}
             </ul>
+          </section>
+
+          {/* --- NEW SECTION: Personal Projects --- */}
+          <section className="pt-4">
+            <h3 className="text-2xl font-semibold mb-6 border-b pb-2 flex items-center gap-2">
+              Personal Projects
+            </h3>
+            <div className="grid grid-cols-1 gap-6">
+              {resumeData.projects.map((project, index) => (
+                <div
+                  key={index}
+                  className={`group p-5 rounded-lg border transition-all duration-300 hover:-translate-y-1 ${
+                    isDarkMode
+                      ? "bg-gray-900/50 border-gray-800 hover:border-pink-500/50 hover:bg-gray-900"
+                      : "bg-white border-gray-200 hover:border-blue-400 hover:shadow-lg"
+                  }`}
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="text-lg font-bold flex items-center gap-2">
+                      {project.name}
+                    </h4>
+                    <div className="flex gap-3">
+                      {project.githubLink && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`transition-colors ${
+                            isDarkMode
+                              ? "text-gray-400 hover:text-white"
+                              : "text-gray-500 hover:text-black"
+                          }`}
+                          title="View Source"
+                        >
+                          <GitHubIcon />
+                        </a>
+                      )}
+                      {project.githubLink && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`transition-colors ${
+                            isDarkMode
+                              ? "text-gray-400 hover:text-pink-400"
+                              : "text-gray-500 hover:text-blue-600"
+                          }`}
+                          title="Live Demo"
+                        ></a>
+                      )}
+                    </div>
+                  </div>
+
+                  <p
+                    className={`text-sm mb-4 leading-relaxed ${
+                      isDarkMode ? "text-gray-300" : "text-gray-600"
+                    }`}
+                  >
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.techStack.map((tech, i) => (
+                      <span
+                        key={i}
+                        className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded border ${
+                          isDarkMode
+                            ? "border-gray-700 text-gray-400 group-hover:border-pink-500/30 group-hover:text-pink-300"
+                            : "border-gray-300 text-gray-500 group-hover:border-blue-400/50 group-hover:text-blue-600"
+                        }`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </section>
         </main>
       </div>

@@ -84,6 +84,13 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       techStack: ["HTML", "CSS"],
       githubLink: "https://github.com/AbdulazizBaHaj/youtube-clone",
     },
+    {
+      name: "Coin Flip Game",
+      description:
+        "A sleek, interactive coin-flipping game built with HTML, CSS, and JavaScript. This project showcases modern web development skills including responsive design, CSS animations, and vanilla JavaScript DOM manipulation.",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/AbdulazizBaHaj/coin-flip-game-js",
+    },
   ],
 };
 

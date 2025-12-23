@@ -1,15 +1,15 @@
-import { Dithering } from "@paper-design/shaders-react";
-import React, { useState } from "react";
+import { Dithering } from '@paper-design/shaders-react';
+import React, { useState } from 'react';
 
 // --- DATA ---
 const resumeData = {
-  name: "Abdulaziz Ba Haj",
-  title: "Front-End Developer (Angular, React)",
+  name: 'Abdulaziz Ba Haj',
+  title: 'Front-End Developer (Angular, React)',
   contact: {
-    phone: "+966 50 193-8374",
-    email: "abdulazizbahajworks@gmail.com",
-    linkedin: "https://linkedin.com/in/abdulaziz-bahaj",
-    github: "https://github.com/AbdulazizBaHaj",
+    phone: '+966 50 193-8374',
+    email: 'abdulazizbahajworks@gmail.com',
+    linkedin: 'https://linkedin.com/in/abdulaziz-bahaj',
+    github: 'https://github.com/AbdulazizBaHaj',
   },
   summary: `Front-End Developer with strong expertise in Angular, React, TypeScript, and modern UI frameworks. Experienced in creating responsive, high-performance web applications with clean, maintainable code.
 
@@ -19,77 +19,84 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
 
   experience: [
     {
-      role: "Frontend Developer",
-      company: "Almajdouie Group",
-      date: "Jul 2023 – Sep 2023",
-      location: "Remote",
+      role: 'Frontend Developer',
+      company: 'Almajdouie Group',
+      date: 'Jul 2023 – Sep 2023',
+      location: 'Remote',
       points: [
-        "Developed a fully responsive landing page using Laravel Blade and Bootstrap",
-        "Enhanced UI interactivity and mobile experience, improving lead conversion rates",
-        "Collaborated across teams to meet tight delivery deadlines",
+        'Developed a fully responsive landing page using Laravel Blade and Bootstrap',
+        'Enhanced UI interactivity and mobile experience, improving lead conversion rates',
+        'Collaborated across teams to meet tight delivery deadlines',
       ],
     },
     {
-      role: "Angular Developer – (Co-op)",
-      company: "Almajdouie Group",
-      date: "May 2023 – Jun 2023",
-      location: "Remote",
+      role: 'Angular Developer – (Co-op)',
+      company: 'Almajdouie Group',
+      date: 'May 2023 – Jun 2023',
+      location: 'Remote',
       points: [
-        "Enhanced internal ticketing and queuing system with Angular 14 and RxJS",
-        "Built reusable, scalable UI components improving overall system performance",
-        "Partnered with the UX team to refine interface usability and accessibility",
+        'Enhanced internal ticketing and queuing system with Angular 14 and RxJS',
+        'Built reusable, scalable UI components improving overall system performance',
+        'Partnered with the UX team to refine interface usability and accessibility',
       ],
     },
     {
-      role: "Frontend Developer – Angular & Ionic",
-      company: "BigLedger Sdn. Bhd.",
-      date: "Aug 2022 – Feb 2023",
-      location: "Selangor, Malaysia",
+      role: 'Frontend Developer – Angular & Ionic',
+      company: 'BigLedger Sdn. Bhd.',
+      date: 'Aug 2022 – Feb 2023',
+      location: 'Selangor, Malaysia',
       points: [
-        "Designed and tested Angular + Ionic mobile-friendly interfaces",
-        "Reduced UI load time by 25% through optimization of rendering logic",
-        "Supported QA testing and sprint planning using Jira, Git, and DBeaver",
+        'Designed and tested Angular + Ionic mobile-friendly interfaces',
+        'Reduced UI load time by 25% through optimization of rendering logic',
+        'Supported QA testing and sprint planning using Jira, Git, and DBeaver',
       ],
     },
   ],
   education: [
     {
-      institution: "Universiti Teknologi Malaysia (UTM)",
-      degree: "Bachelor of Computer Science (Network & Security)",
-      date: "Aug 2018 – Feb 2023",
-      location: "Johor Bahru, Malaysia",
-      details: "Graduated with CGPA of 3.69 out of 4",
+      institution: 'Universiti Teknologi Malaysia (UTM)',
+      degree: 'Bachelor of Computer Science (Network & Security)',
+      date: 'Aug 2018 – Feb 2023',
+      location: 'Johor Bahru, Malaysia',
+      details: 'Graduated with CGPA of 3.69 out of 4',
     },
   ],
   skills: {
-    Languages: "JavaScript, TypeScript, HTML5, CSS3, PHP, Python",
-    Frameworks: "Angular, React, Laravel, Ionic, Node.js",
-    Tools: "Git, Jira, Docker, AWS, VS Code",
-    Databases: "MySQL, PostgreSQL, MongoDB",
-    Methodologies: "Agile, Scrum",
+    Languages: 'JavaScript, TypeScript, HTML5, CSS3, PHP, Python',
+    Frameworks: 'Angular, React, Laravel, Ionic, Node.js',
+    Tools: 'Git, Jira, Docker, AWS, VS Code',
+    Databases: 'MySQL, PostgreSQL, MongoDB',
+    Methodologies: 'Agile, Scrum',
   },
   awards: [
     "Dean's Award, Universiti Teknologi Malaysia – Academic Excellence (2023)",
     "Dean's List Honors, 5 Semesters – UTM (2019–2022)",
-    "CCNA: Enterprise Networking, Security & Automation, Cisco (2021)",
-    "CCNA: Switching, Routing & Wireless Essentials, Cisco (2021)",
-    "CCNA: Introduction to Networks, Cisco (2021)",
-    "Responsive Web Design, freeCodeCamp (2022)",
+    'CCNA: Enterprise Networking, Security & Automation, Cisco (2021)',
+    'CCNA: Switching, Routing & Wireless Essentials, Cisco (2021)',
+    'CCNA: Introduction to Networks, Cisco (2021)',
+    'Responsive Web Design, freeCodeCamp (2022)',
   ],
   projects: [
     {
-      name: "Youtube Clone",
+      name: 'Youtube Clone',
       description:
         "A recreation of YouTube's video watch page interface built entirely with HTML and CSS. This project demonstrates advanced front-end development skills including responsive design, Flexbox layouts, and modern CSS techniques.",
-      techStack: ["HTML", "CSS"],
-      githubLink: "https://github.com/AbdulazizBaHaj/youtube-clone",
+      techStack: ['HTML', 'CSS'],
+      githubLink: 'https://github.com/AbdulazizBaHaj/youtube-clone',
     },
     {
-      name: "Coin Flip Game",
+      name: 'Coin Flip Game',
       description:
-        "A sleek, interactive coin-flipping game built with HTML, CSS, and JavaScript. This project showcases modern web development skills including responsive design, CSS animations, and vanilla JavaScript DOM manipulation.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      githubLink: "https://github.com/AbdulazizBaHaj/coin-flip-game-js",
+        'A sleek, interactive coin-flipping game built with HTML, CSS, and JavaScript. This project showcases modern web development skills including responsive design, CSS animations, and vanilla JavaScript DOM manipulation.',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      githubLink: 'https://github.com/AbdulazizBaHaj/coin-flip-game-js',
+    },
+    {
+      name: 'GitHub Random Repository',
+      description:
+        'A simple, fast, and interactive web application that helps users discover random GitHub repositories by selecting a programming language.',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'REST API'],
+      githubLink: 'https://github.com/AbdulazizBaHaj/github-random-repository',
     },
   ],
 };
@@ -189,7 +196,7 @@ const ChevronDownIcon = ({ expanded }: { expanded?: boolean }) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     className={`transition-transform duration-300 transform ${
-      expanded ? "rotate-180" : "rotate-0"
+      expanded ? 'rotate-180' : 'rotate-0'
     }`}
   >
     <path d="m6 9 6 6 6-6" />
@@ -212,7 +219,7 @@ export default function ResumePage() {
   return (
     <div
       className={`relative min-h-screen overflow-hidden flex flex-col md:flex-row font-mono ${
-        isDarkMode ? "bg-black text-gray-200" : "bg-gray-100 text-gray-800"
+        isDarkMode ? 'bg-black text-gray-200' : 'bg-gray-100 text-gray-800'
       }`}
     >
       <div className="w-full md:w-1/2 p-6 sm:p-8 md:p-12 relative z-10 overflow-y-auto">
@@ -220,8 +227,8 @@ export default function ResumePage() {
           onClick={() => setIsDarkMode(!isDarkMode)}
           className={`absolute top-6 right-6 sm:top-8 sm:right-8 p-2 rounded-full transition-colors ${
             isDarkMode
-              ? "text-gray-300 hover:bg-white/10"
-              : "text-gray-700 hover:bg-black/10"
+              ? 'text-gray-300 hover:bg-white/10'
+              : 'text-gray-700 hover:bg-black/10'
           }`}
           aria-label="Toggle theme"
         >
@@ -232,7 +239,7 @@ export default function ResumePage() {
           <div className="flex items-center gap-4 md:gap-6 mb-4">
             <div
               className={`w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0 border-2 ${
-                isDarkMode ? "border-pink-400" : "border-blue-600"
+                isDarkMode ? 'border-pink-400' : 'border-blue-600'
               }`}
             >
               <img
@@ -248,7 +255,7 @@ export default function ResumePage() {
               </h1>
               <h2
                 className={`text-lg md:text-2xl font-light ${
-                  isDarkMode ? "text-pink-400" : "text-blue-600"
+                  isDarkMode ? 'text-pink-400' : 'text-blue-600'
                 }`}
               >
                 {resumeData.title}
@@ -256,8 +263,8 @@ export default function ResumePage() {
               <span
                 className={`inline-flex items-center gap-2 mt-2 px-3 py-1 text-xs font-semibold rounded-full ${
                   isDarkMode
-                    ? "bg-pink-900 text-pink-300"
-                    : "bg-blue-100 text-blue-700"
+                    ? 'bg-pink-900 text-pink-300'
+                    : 'bg-blue-100 text-blue-700'
                 }`}
               >
                 <span className="text-sm leading-none">💼</span>
@@ -318,7 +325,7 @@ export default function ResumePage() {
               Professional Summary
             </h3>
             <div className="text-base leading-relaxed space-y-4">
-              {resumeData.summary.split("\n").map((para, i) => (
+              {resumeData.summary.split('\n').map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
             </div>
@@ -342,7 +349,7 @@ export default function ResumePage() {
                         <h4 className="text-lg font-bold">{job.role}</h4>
                         <p
                           className={`${
-                            isDarkMode ? "text-pink-300" : "text-blue-500"
+                            isDarkMode ? 'text-pink-300' : 'text-blue-500'
                           }`}
                         >
                           {job.company}
@@ -369,7 +376,7 @@ export default function ResumePage() {
                   <div
                     id={`experience-details-${index}`}
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                      expandedExperience[index] ? "max-h-96" : "max-h-0"
+                      expandedExperience[index] ? 'max-h-96' : 'max-h-0'
                     }`}
                   >
                     <ul className="list-disc list-inside space-y-1 text-base mt-2">
@@ -410,13 +417,13 @@ export default function ResumePage() {
                     {category}
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {skills.split(",").map((skill, i) => (
+                    {skills.split(',').map((skill, i) => (
                       <span
                         key={i}
                         className={`px-3 py-1 text-xs font-medium rounded-full ${
                           isDarkMode
-                            ? "bg-pink-900/40 text-pink-200 border border-pink-700/40"
-                            : "bg-blue-100 text-blue-700 border border-blue-200"
+                            ? 'bg-pink-900/40 text-pink-200 border border-pink-700/40'
+                            : 'bg-blue-100 text-blue-700 border border-blue-200'
                         }`}
                       >
                         {skill.trim()}
@@ -450,8 +457,8 @@ export default function ResumePage() {
                   key={index}
                   className={`group p-5 rounded-lg border transition-all duration-300 hover:-translate-y-1 ${
                     isDarkMode
-                      ? "bg-gray-900/50 border-gray-800 hover:border-pink-500/50 hover:bg-gray-900"
-                      : "bg-white border-gray-200 hover:border-blue-400 hover:shadow-lg"
+                      ? 'bg-gray-900/50 border-gray-800 hover:border-pink-500/50 hover:bg-gray-900'
+                      : 'bg-white border-gray-200 hover:border-blue-400 hover:shadow-lg'
                   }`}
                 >
                   <div className="flex justify-between items-start mb-2">
@@ -466,8 +473,8 @@ export default function ResumePage() {
                           rel="noopener noreferrer"
                           className={`transition-colors ${
                             isDarkMode
-                              ? "text-gray-400 hover:text-white"
-                              : "text-gray-500 hover:text-black"
+                              ? 'text-gray-400 hover:text-white'
+                              : 'text-gray-500 hover:text-black'
                           }`}
                           title="View Source"
                         >
@@ -481,8 +488,8 @@ export default function ResumePage() {
                           rel="noopener noreferrer"
                           className={`transition-colors ${
                             isDarkMode
-                              ? "text-gray-400 hover:text-pink-400"
-                              : "text-gray-500 hover:text-blue-600"
+                              ? 'text-gray-400 hover:text-pink-400'
+                              : 'text-gray-500 hover:text-blue-600'
                           }`}
                           title="Live Demo"
                         ></a>
@@ -492,7 +499,7 @@ export default function ResumePage() {
 
                   <p
                     className={`text-sm mb-4 leading-relaxed ${
-                      isDarkMode ? "text-gray-300" : "text-gray-600"
+                      isDarkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}
                   >
                     {project.description}
@@ -504,8 +511,8 @@ export default function ResumePage() {
                         key={i}
                         className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded border ${
                           isDarkMode
-                            ? "border-gray-700 text-gray-400 group-hover:border-pink-500/30 group-hover:text-pink-300"
-                            : "border-gray-300 text-gray-500 group-hover:border-blue-400/50 group-hover:text-blue-600"
+                            ? 'border-gray-700 text-gray-400 group-hover:border-pink-500/30 group-hover:text-pink-300'
+                            : 'border-gray-300 text-gray-500 group-hover:border-blue-400/50 group-hover:text-blue-600'
                         }`}
                       >
                         {tech}
@@ -521,10 +528,10 @@ export default function ResumePage() {
 
       <div className="w-full h-96 md:h-auto md:w-1/2 relative">
         <Dithering
-          style={{ height: "100%", width: "100%" }}
-          colorBack={isDarkMode ? "hsl(0, 0%, 0%)" : "hsl(0, 0%, 95%)"}
+          style={{ height: '100%', width: '100%' }}
+          colorBack={isDarkMode ? 'hsl(0, 0%, 0%)' : 'hsl(0, 0%, 95%)'}
           colorFront={
-            isDarkMode ? "hsl(320, 100%, 70%)" : "hsl(220, 100%, 70%)"
+            isDarkMode ? 'hsl(320, 100%, 70%)' : 'hsl(220, 100%, 70%)'
           }
           shape="cat"
           type="4x4"

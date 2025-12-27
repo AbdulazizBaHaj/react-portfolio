@@ -105,7 +105,7 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
     {
       id: 1,
       title:
-        'The Degree of Bachelor of Computer Science (Computer Networks and Security) With Honours',
+        'Bachelor of Computer Science (Computer Networks and Security) with Honours',
       organization: 'Universiti Teknologi Malaysia (UTM)',
       date: 'Mar 2023',
       description:

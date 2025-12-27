@@ -46,9 +46,10 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       date: 'Aug 2022 – Feb 2023',
       location: 'Selangor, Malaysia',
       points: [
-        'Designed and tested Angular + Ionic mobile-friendly interfaces',
-        'Reduced UI load time by 25% through optimization of rendering logic',
-        'Supported QA testing and sprint planning using Jira, Git, and DBeaver',
+        'Developed responsive, mobile-friendly user interfaces for BigLedger’s cloud-native ERP and CRM platform using Angular, Ionic, HTML/CSS, serving industry-specific modules (e.g., Retail POS, Inventory Management, Digital CRM, and Manufacturing)',
+        'Collaborated closely with backend teams to debug issues, maintain existing features, and implement new functionalities in an Agile environment with Jira and Git',
+        'Implemented advanced MVVM-based search functionality across ERP/CRM modules to enhance data retrieval and user experience',
+        'Conducted QA testing, performance optimization, and data analysis using tools like DBeaver to ensure reliability and efficiency',
       ],
     },
   ],
@@ -75,6 +76,7 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
     'CCNA: Switching, Routing & Wireless Essentials, Cisco (2021)',
     'CCNA: Introduction to Networks, Cisco (2021)',
     'Responsive Web Design, freeCodeCamp (2022)',
+    'Full Stack Development Track, One Million Arab Coders (2020)',
   ],
   projects: [
     {
@@ -97,6 +99,79 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
         'A simple, fast, and interactive web application that helps users discover random GitHub repositories by selecting a programming language.',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'REST API'],
       githubLink: 'https://github.com/AbdulazizBaHaj/github-random-repository',
+    },
+  ],
+  documents: [
+    {
+      id: 1,
+      title:
+        'The Degree of Bachelor of Computer Science (Computer Networks and Security) With Honours',
+      organization: 'Universiti Teknologi Malaysia (UTM)',
+      date: 'Mar 2023',
+      description:
+        "Earned a specialized degree in network architecture and cybersecurity with high distinction. Recognized with the Dean's Award for Academic Excellence (2023) and consistently named to the Dean's List for 5 semesters (2019–2022). The program focused on advanced cryptography, ethical hacking, and network infrastructure, providing a strong foundation in securing and managing enterprise-level digital systems.",
+      documentLink:
+        'https://drive.google.com/file/d/1Jocg_QXWBIL6GJoOuDUhPxgXbPve6QCh/view?usp=sharing',
+    },
+    {
+      id: 2,
+      title: 'Full Academic Transcripts',
+      organization: 'Universiti Teknologi Malaysia (UTM)',
+      date: '2019 – 2023',
+      description:
+        "Official academic record detailing the completion of the Bachelor of Computer Science (Computer Networks and Security) program. This transcript documents a consistent record of high achievement, including 5 Dean's List honors and the culminating Dean's Award for Academic Excellence in 2023.",
+      documentLink:
+        'https://drive.google.com/file/d/1ppdudvHnHFmLR2NGToIRYf_Whwf_LZIt/view?usp=sharing',
+    },
+    {
+      id: 3,
+      title: 'CCNA: Introduction to Networks',
+      organization: 'Cisco',
+      date: 'Mar 2021',
+      description:
+        "CCNA Introduction to Networks (ITN) is the first course in Cisco's CCNA curriculum. It introduces core networking concepts, including architectures, models, protocols, and components of the internet and computer networks.",
+      documentLink:
+        'https://www.credly.com/badges/12bd0ba9-2cd4-4c66-9958-39c76ca154f7',
+    },
+    {
+      id: 4,
+      title: 'CCNA: Switching, Routing, and Wireless Essentials',
+      organization: 'Cisco',
+      date: 'Apr 2021',
+      description:
+        'CCNA Switching, Routing, and Wireless Essentials (SRWE) is the second Cisco Networking Academy course focusing on intermediate networking concepts, including VLANs, STP, inter-VLAN routing, and wireless (WLAN) security. It covers configuration, troubleshooting, and securing small-to-medium business networks.',
+      documentLink:
+        'https://www.credly.com/badges/4eb29d31-1624-4f81-88f0-f63828ebd977',
+    },
+    {
+      id: 5,
+      title: 'CCNA: Enterprise Networking, Security, and Automation',
+      organization: 'Cisco',
+      date: 'Apr 2021',
+      description:
+        'CCNA Enterprise Networking, Security, and Automation (ENSA) is the final course in the Cisco Networking Academy CCNA series, focusing on advanced WAN technologies, network security, virtualization, and automation. It covers OSPF, VPNs, QoS, and software-defined networking (SDN) to prepare students for enterprise-level networking roles.',
+      documentLink:
+        'https://www.credly.com/badges/0dacbc34-7284-4b37-b5cb-3c6cb32675c4',
+    },
+    {
+      id: 6,
+      title: 'freeCodeCamp: Responsive Web Design Certification',
+      organization: 'freeCodeCamp',
+      date: 'Jun 2021',
+      description:
+        "This course teaches the fundamentals of HTML and CSS, including modern layout, design, accessibility, and responsive web development. You'll build practical projects and gain the skills to create professional, user-friendly webpages.",
+      documentLink:
+        'https://www.freecodecamp.org/certification/abdulazizbahaj/responsive-web-design',
+    },
+    {
+      id: 7,
+      title: 'Full Stack Development Track',
+      organization: 'One Million Arab Coders',
+      date: 'Nov 2020',
+      description:
+        'The One Million Arab Coders Full Stack Development track is an intensive 8-10 week Udacity-powered program focused on building end-to-end web application skills, covering Python, SQL, and GitHub, while emphasizing practical, project-based learning. It was one of the top tracks, representing over 31% of registrations, and aimed to empower Arab youth with future-ready digital skills.',
+      documentLink:
+        'https://drive.google.com/file/d/1bGkjHHrkfoQMSDkzx3tuJshzeYRyPmIO/view?usp=sharing',
     },
   ],
 };
@@ -203,16 +278,43 @@ const ChevronDownIcon = ({ expanded }: { expanded?: boolean }) => (
   </svg>
 );
 
+const ViewIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+
 export default function ResumePage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [expandedExperience, setExpandedExperience] = useState<{
     [key: number]: boolean;
   }>({});
+  const [expandedDoc, setExpandedDoc] = useState<{ [key: number]: boolean }>(
+    {}
+  );
 
   const toggleExperience = (index: number) => {
     setExpandedExperience((prevState) => ({
       ...prevState,
       [index]: !prevState[index],
+    }));
+  };
+
+  const toggleDocument = (id: number) => {
+    setExpandedDoc((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
     }));
   };
 
@@ -376,7 +478,7 @@ export default function ResumePage() {
                   <div
                     id={`experience-details-${index}`}
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                      expandedExperience[index] ? 'max-h-96' : 'max-h-0'
+                      expandedExperience[index] ? 'max-h-[100%]' : 'max-h-0'
                     }`}
                   >
                     <ul className="list-disc list-inside space-y-1 text-base mt-2">
@@ -518,6 +620,94 @@ export default function ResumePage() {
                         {tech}
                       </span>
                     ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* --- NEW SECTION: Relevant Documents --- */}
+          <section className="pt-4">
+            <h3 className="text-2xl font-semibold mb-6 border-b pb-2">
+              Relevant Documents
+            </h3>
+            <div className="grid grid-cols-1 gap-6">
+              {resumeData.documents.map((doc) => (
+                <div
+                  key={doc.id}
+                  className={`group rounded-lg border overflow-hidden transition-all duration-300 ${
+                    isDarkMode
+                      ? 'bg-gray-900/50 border-gray-800 hover:border-pink-500/50'
+                      : 'bg-white border-gray-200 hover:border-blue-400'
+                  }`}
+                >
+                  <button
+                    onClick={() => toggleDocument(doc.id)}
+                    className="w-full text-left p-6 hover:opacity-80 transition-opacity"
+                    aria-expanded={!!expandedDoc[doc.id]}
+                    aria-controls={`doc-details-${doc.id}`}
+                  >
+                    <div className="flex justify-between items-start gap-4">
+                      <div className="flex-1">
+                        <h4
+                          className={`text-lg font-bold mb-2 cursor-pointer ${
+                            isDarkMode ? 'text-white' : 'text-gray-900'
+                          }`}
+                        >
+                          {doc.title}
+                        </h4>
+                        <div className="flex flex-wrap gap-2 items-center text-sm">
+                          <span
+                            className={`${
+                              isDarkMode ? 'text-pink-400' : 'text-blue-600'
+                            } font-semibold`}
+                          >
+                            {doc.organization}
+                          </span>
+                          <span className="text-gray-500">•</span>
+                          <span className="text-gray-400">{doc.date}</span>
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0">
+                        <ChevronDownIcon expanded={!!expandedDoc[doc.id]} />
+                      </div>
+                    </div>
+                  </button>
+
+                  <div
+                    id={`doc-details-${doc.id}`}
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      expandedDoc[doc.id] ? 'max-h-[100%]' : 'max-h-0'
+                    }`}
+                  >
+                    <div
+                      className={`px-6 pb-6 border-t ${
+                        isDarkMode ? 'border-gray-800' : 'border-gray-200'
+                      }`}
+                    >
+                      <p
+                        className={`text-base leading-relaxed px-6 py-6 mb-4${
+                          isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                        }`}
+                      >
+                        {doc.description}
+                      </p>
+
+                      <div className="flex gap-3 justify-end">
+                        <a
+                          href={doc.documentLink}
+                          className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-colors ${
+                            isDarkMode
+                              ? 'bg-pink-600/80 hover:bg-pink-600 text-white'
+                              : 'bg-blue-600 hover:bg-blue-700 text-white'
+                          }`}
+                          target="_blank"
+                        >
+                          <ViewIcon />
+                          View
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}

@@ -100,6 +100,22 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'REST API'],
       githubLink: 'https://github.com/AbdulazizBaHaj/github-random-repository',
     },
+    {
+      name: 'Production-Ready SaaS Frontend',
+      description:
+        'A comprehensive Next.js 15 application demonstrating production-level SaaS development practices. Features include secure API integration with dynamic filtering, complete authentication flows (email verification and password reset), comprehensive state management with loading/empty/error states, and TypeScript strict mode. Built with Server and Client Components architecture, URL-driven state management, and includes mock APIs for testing. Showcases professional git workflow with incremental commits and detailed documentation.',
+      techStack: [
+        'Next.js 15',
+        'TypeScript',
+        'React',
+        'Tailwind CSS',
+        'Recharts',
+        'REST API',
+        'Pull Request',
+      ],
+      githubLink:
+        'https://github.com/AbdulazizBaHaj/feelix-frontend-prod-ready',
+    },
   ],
   documents: [
     {

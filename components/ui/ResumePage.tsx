@@ -116,6 +116,14 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       githubLink:
         'https://github.com/AbdulazizBaHaj/feelix-frontend-prod-ready',
     },
+    {
+      name: 'QR Code Generator',
+      description:
+        'A production-grade React feature demonstrating advanced component architecture, custom hooks, and API integration. Built with a feature-based folder structure for scalability, this project showcases state management patterns, client-side validation, error handling with retry logic, and clean separation of concerns following enterprise React best practices.',
+      techStack: ['React', 'Next.js', 'JavaScript', 'REST API'],
+      githubLink:
+        'https://github.com/AbdulazizBaHaj/feelix-practical-react-challenge',
+    },
   ],
   documents: [
     {

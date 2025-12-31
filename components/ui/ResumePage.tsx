@@ -141,6 +141,29 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       githubLink:
         'https://github.com/AbdulazizBaHaj/aldana-landing-page-laravel-v9',
     },
+    {
+      name: 'Infinity Todo',
+      description:
+        'A full-featured task management web application built with PHP and MySQL for a technical assessment. Implements complete user authentication (registration/login), organized task management with group functionality, and CRUD operations. Features an MVC-like architecture with separate config, controllers, and database layers. Demonstrates backend development skills including session management, database design, secure authentication patterns, and structured PHP application architecture.',
+      techStack: ['PHP', 'MySQL', 'HTML', 'CSS', 'MVC Architecture'],
+      githubLink:
+        'https://github.com/AbdulazizBaHaj/technical-assessment-infinity-todo',
+    },
+    {
+      name: 'MELI Learning Management System',
+      description:
+        'A comprehensive Learning Management System (LMS) built with Laravel for the Majdouie E-Learning Institute. Manages educational programs, courses, certifications, and student enrollment with a complete administrative interface. Demonstrates enterprise-level Laravel development including complex relational database design, role-based access control, course curriculum management, student progress tracking, and certificate generation. Features scalable architecture for handling multiple programs, instructors, and student cohorts with full CRUD operations across all entities.',
+      techStack: [
+        'Laravel',
+        'PHP',
+        'MySQL',
+        'Blade Templates',
+        'MVC Architecture',
+        'Authentication',
+        'Authorization',
+      ],
+      githubLink: 'https://github.com/AbdulazizBaHaj/meli-system',
+    },
   ],
   documents: [
     {

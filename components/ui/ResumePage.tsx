@@ -124,6 +124,23 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       githubLink:
         'https://github.com/AbdulazizBaHaj/feelix-practical-react-challenge',
     },
+    {
+      name: 'Aldana Landing Page',
+      description:
+        'A professional multi-language landing page built with Laravel 9, featuring English and Arabic localization with RTL support. Implements a production-ready quote request system with automated email notifications, form validation, and SMTP integration. Showcases full-stack Laravel development including Blade components architecture, middleware implementation for language switching, custom mailable classes, and clean MVC patterns. Demonstrates backend proficiency with proper environment configuration, database migrations, and secure form handling.',
+      techStack: [
+        'Laravel 9',
+        'PHP',
+        'MySQL',
+        'Blade Templates',
+        'SMTP',
+        'i18n',
+        'Composer',
+        'Laravel Mix',
+      ],
+      githubLink:
+        'https://github.com/AbdulazizBaHaj/aldana-landing-page-laravel-v9',
+    },
   ],
   documents: [
     {

@@ -1,5 +1,5 @@
 import { Dithering } from '@paper-design/shaders-react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // --- DATA ---
 const resumeData = {
@@ -10,34 +10,30 @@ const resumeData = {
     email: 'abdulazizbahajworks@gmail.com',
     linkedin: 'https://linkedin.com/in/abdulaziz-bahaj',
     github: 'https://github.com/AbdulazizBaHaj',
+    SCE: 'https://drive.google.com/file/d/149QWGQh8x2isv_cVuQXTBvo16R_NlVUU/view?usp=sharing',
   },
-  summary: `Front-End Developer with strong expertise in Angular, React, TypeScript, and modern UI frameworks. Experienced in creating responsive, high-performance web applications with clean, maintainable code.
-
-Skilled in RxJS state management, API integration, and mobile-friendly UI/UX using Bootstrap and Ionic. Adept at Agile collaboration through Jira and Git.
-
-Holds a B.Sc. in Computer Science (Network & Security) and certifications in Responsive Web Design (freeCodeCamp) and Cisco CCNA. Passionate about continuous learning and delivering smooth, user-centered digital experiences.`,
-
+  summary: `Front-End Developer with expertise in Angular, React, and TypeScript, specializing in responsive, high-performance web applications. Proven experience building mobile-friendly interfaces using modern UI frameworks, with strong skills in RxJS state management and API integration. Adept at Agile collaboration and delivering clean, maintainable code in fast-paced environments. Holds a B.Sc. in Computer Science (Network & Security) with a CGPA of 3.69/4.0, Dean’s Award for Academic Excellence, and multiple certifications including Responsive Web Design and Cisco CCNA.`,
   experience: [
     {
-      role: 'Frontend Developer',
+      role: 'Frontend Developer (Contract)',
       company: 'Almajdouie Group',
       date: 'Jul 2023 – Sep 2023',
       location: 'Remote',
       points: [
-        'Developed a fully responsive landing page using Laravel Blade and Bootstrap',
-        'Enhanced UI interactivity and mobile experience, improving lead conversion rates',
-        'Collaborated across teams to meet tight delivery deadlines',
+        'Delivered fully responsive marketing landing page using Laravel Blade and Bootstrap within a 3-month contract, ensuring seamless experience across 5+ device breakpoints',
+        'Improved lead generation performance by implementing interactive UI components and optimizing conversion flow based on UX/UI design specifications',
+        'Collaborated with Development Team Lead and marketing team to maintain brand consistency and meet all project milestones on schedule',
       ],
     },
     {
-      role: 'Angular Developer – (Co-op)',
+      role: 'Angular Developer (Contract – Co-op)',
       company: 'Almajdouie Group',
       date: 'May 2023 – Jun 2023',
       location: 'Remote',
       points: [
-        'Enhanced internal ticketing and queuing system with Angular 14 and RxJS',
-        'Built reusable, scalable UI components improving overall system performance',
-        'Partnered with the UX team to refine interface usability and accessibility',
+        'Enhanced internal ticketing and queuing system using Angular 14, implementing real-time updates that improved ticket processing visibility and streamlined workflows',
+        'Optimized system performance by building scalable, reusable components and implementing efficient RxJS operators for state management',
+        'Collaborated with Technical Project Manager, stakeholders, and UI/UX team to refine component usability, delivering improvements within the 2-month co-op period',
       ],
     },
     {
@@ -46,10 +42,10 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
       date: 'Aug 2022 – Feb 2023',
       location: 'Selangor, Malaysia',
       points: [
-        'Developed responsive, mobile-friendly user interfaces for BigLedger’s cloud-native ERP and CRM platform using Angular, Ionic, HTML/CSS, serving industry-specific modules (e.g., Retail POS, Inventory Management, Digital CRM, and Manufacturing)',
-        'Collaborated closely with backend teams to debug issues, maintain existing features, and implement new functionalities in an Agile environment with Jira and Git',
-        'Implemented advanced MVVM-based search functionality across ERP/CRM modules to enhance data retrieval and user experience',
-        'Conducted QA testing, performance optimization, and data analysis using tools like DBeaver to ensure reliability and efficiency',
+        'Developed responsive, mobile-friendly interfaces for a cloud-native ERP/CRM platform using Angular, Ionic, and HTML/CSS across 4 industry-specific modules (Retail POS, Inventory, Digital CRM, Manufacturing) serving 100+ enterprise clients',
+        'Implemented advanced MVVM-based search functionality across 6+ ERP/CRM modules, improving data retrieval speed and enhancing user experience for complex queries',
+        'Delivered 15+ features and bug fixes over a 6-month period while collaborating with 4 backend developers in an Agile environment, maintaining high code quality standards',
+        'Optimized application performance for iOS and Android platforms through QA testing and data analysis using DBeaver, ensuring reliability across mobile devices',
       ],
     },
   ],
@@ -63,11 +59,15 @@ Holds a B.Sc. in Computer Science (Network & Security) and certifications in Res
     },
   ],
   skills: {
-    Languages: 'JavaScript, TypeScript, HTML5, CSS3, PHP, Python',
-    Frameworks: 'Angular, React, Laravel, Ionic, Node.js',
-    Tools: 'Git, Jira, Docker, AWS, VS Code',
-    Databases: 'MySQL, PostgreSQL, MongoDB',
-    Methodologies: 'Agile, Scrum',
+    Languages: 'JavaScript, TypeScript, PHP',
+    'Frontend Frameworks & Libraries':
+      'Angular, React, Ionic, Bootstrap, Laravel Blade',
+    'Markup & Styling': 'HTML, CSS',
+    'State Management': 'RxJS, Angular Services, MVVM Pattern',
+    'Tools & Platforms': 'Git, Jira',
+    Practices:
+      'Agile/Scrum, Responsive Design, QA Testing, Performance Optimization',
+    'Spoken Languages': 'Arabic (Native), English (Professional Proficiency)',
   },
   awards: [
     "Dean's Award, Universiti Teknologi Malaysia – Academic Excellence (2023)",
@@ -388,7 +388,7 @@ export default function ResumePage() {
         isDarkMode ? 'bg-black text-gray-200' : 'bg-gray-100 text-gray-800'
       }`}
     >
-      <div className="w-full md:w-1/2 p-6 sm:p-8 md:p-12 relative z-10 overflow-y-auto">
+      <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-12 relative z-10 overflow-y-auto">
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
           className={`absolute top-6 right-6 sm:top-8 sm:right-8 p-2 rounded-full transition-colors ${
@@ -402,7 +402,7 @@ export default function ResumePage() {
         </button>
 
         <header className="mb-10">
-          <div className="flex items-center gap-4 md:gap-6 mb-4">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
             <div
               className={`w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden flex-shrink-0 border-2 ${
                 isDarkMode ? 'border-pink-400' : 'border-blue-600'
@@ -433,14 +433,13 @@ export default function ResumePage() {
                     : 'bg-blue-100 text-blue-700'
                 }`}
               >
-                <span className="text-sm leading-none">💼</span>
                 <span className="leading-none">
-                  Open to work in Saudi Arabia, UAE, Qatar
+                  Open to Middle East relocation
                 </span>
               </span>
             </div>
           </div>
-          <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4 text-sm">
+          <div className="flex flex-wrap gap-x-9 gap-y-2 mt-4 text-sm">
             <a
               href={`tel:${resumeData.contact.phone}`}
               className="flex items-center gap-2 hover:underline"
@@ -481,6 +480,21 @@ export default function ResumePage() {
               className="flex items-center gap-2 hover:underline"
             >
               <GitHubIcon /> GitHub
+            </a>
+            <a
+              href={resumeData.contact.SCE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <img
+                src="/sce-logo-on-dark.svg"
+                alt="Saudi Council of Engineers"
+                className={`h-5 w-auto transition ${
+                  isDarkMode ? '' : 'invert'
+                }`}
+              />
+              Saudi Council of Engineers ID: 956411
             </a>
           </div>
         </header>
@@ -780,7 +794,7 @@ export default function ResumePage() {
         </main>
       </div>
 
-      <div className="w-full h-96 md:h-auto md:w-1/2 relative">
+      <div className="w-full h-96 md:h-auto sm:w-1/2 relative">
         <Dithering
           style={{ height: '100%', width: '100%' }}
           colorBack={isDarkMode ? 'hsl(0, 0%, 0%)' : 'hsl(0, 0%, 95%)'}

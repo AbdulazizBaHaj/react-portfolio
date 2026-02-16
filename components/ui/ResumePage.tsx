@@ -15,6 +15,18 @@ const resumeData = {
   summary: `Front-End Developer with expertise in Angular, React, and TypeScript, specializing in responsive, high-performance web applications. Proven experience building mobile-friendly interfaces using modern UI frameworks, with strong skills in RxJS state management and API integration. Adept at Agile collaboration and delivering clean, maintainable code in fast-paced environments. Holds a B.Sc. in Computer Science (Network & Security) with a CGPA of 3.69/4.0, Dean’s Award for Academic Excellence, and multiple certifications including Responsive Web Design and Cisco CCNA.`,
   experience: [
     {
+      role: 'IT Operations Specialist',
+      company: 'Alam Al-Jlod Alragyah Est.',
+      date: 'Feb 2024 – Present',
+      location: 'Jeddah, Saudi Arabia',
+      points: [
+        'Led digital transformation from paper-based operations to ZATCA-compliant e-invoicing system, unifying products, warehouse inventory, and billing across 2 branches',
+        'Procured and configured central server, POS PCs, and e-invoice provider integration for seamless branch connectivity, enabling real-time stock tracking and sales automation',
+        'Automated warehouse management (stocks and sales tracking), significantly reducing reconciliation time and improving inventory accuracy',
+        'Served as primary IT troubleshooter and trainer, onboarding non-technical staff to digital workflows and eliminating paper dependency',
+      ],
+    },
+    {
       role: 'Frontend Developer (Contract)',
       company: 'Almajdouie Group',
       date: 'Jul 2023 – Sep 2023',

@@ -67,7 +67,11 @@ const resumeData = {
       degree: 'Bachelor of Computer Science (Network & Security)',
       date: 'Aug 2018 – Feb 2023',
       location: 'Johor Bahru, Malaysia',
-      details: 'Graduated with CGPA of 3.69 out of 4',
+      points: [
+        'Graduated with CGPA of 3.69 out of 4',
+        'Recipient of the Dean’s Award for Academic Excellence',
+        'Earned Dean’s List Honors in 5 semesters',
+      ],
     },
   ],
   skills: {
@@ -379,6 +383,9 @@ export default function ResumePage() {
   const [expandedDoc, setExpandedDoc] = useState<{ [key: number]: boolean }>(
     {}
   );
+  const [expandedEducation, setExpandedEducation] = useState<{
+    [key: number]: boolean;
+  }>({});
 
   const toggleExperience = (index: number) => {
     setExpandedExperience((prevState) => ({
@@ -391,6 +398,13 @@ export default function ResumePage() {
     setExpandedDoc((prevState) => ({
       ...prevState,
       [id]: !prevState[id],
+    }));
+  };
+
+  const toggleEducation = (index: number) => {
+    setExpandedEducation((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
     }));
   };
 
@@ -549,10 +563,10 @@ export default function ResumePage() {
                       </div>
                       <div className="flex items-center text-right flex-shrink-0 pl-4">
                         <div className="flex flex-col items-end">
-                          <span className="text-sm text-gray-400">
+                          <span className="text-xs md:text-sm text-gray-400">
                             {job.date}
                           </span>
-                          <span className="text-sm text-gray-400">
+                          <span className="text-xs md:text-sm text-gray-400">
                             {job.location}
                           </span>
                         </div>
@@ -588,12 +602,53 @@ export default function ResumePage() {
             </h3>
             {resumeData.education.map((edu, index) => (
               <div key={index}>
-                <div className="flex justify-between items-baseline">
-                  <h4 className="text-lg font-bold">{edu.institution}</h4>
-                  <span className="text-sm text-gray-400">{edu.date}</span>
+                <button
+                  onClick={() => toggleEducation(index)} // <--- Update function
+                  className="w-full text-left"
+                  aria-expanded={!!expandedEducation[index]} // <--- Update state
+                  aria-controls={`education-details-${index}`}
+                >
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h4 className="text-lg font-bold">{edu.degree}</h4>
+                      <p
+                        className={
+                          isDarkMode ? 'text-pink-300' : 'text-blue-500'
+                        }
+                      >
+                        {edu.institution}
+                      </p>
+                    </div>
+                    <div className="flex items-center text-right flex-shrink-0 pl-4">
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs md:text-sm text-gray-400">
+                          {edu.date}
+                        </span>
+                        <span className="text-xs md:text-sm text-gray-400">
+                          {edu.location}
+                        </span>
+                      </div>
+                      <div className="ml-4">
+                        <ChevronDownIcon
+                          expanded={!!expandedEducation[index]}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <div
+                  id={`education-details-${index}`}
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    expandedEducation[index] ? 'max-h-[500px]' : 'max-h-0'
+                  }`}
+                >
+                  <ul className="list-disc list-inside space-y-1 text-base mt-2">
+                    {edu.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
-                <p>{edu.degree}</p>
-                <p className="text-sm text-gray-400">{edu.details}</p>
               </div>
             ))}
           </section>

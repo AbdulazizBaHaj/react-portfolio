@@ -16,7 +16,7 @@ const resumeData = {
   summary: `Front-End & Full-Stack Developer with 3+ years of experience building responsive web apps and internal tools using React, Angular, Node.js, and TypeScript. Led development of purchase-order, e‑invoicing, and warehouse systems that streamlined operations, reduced manual data entry, and improved visibility for sales and management teams. Proven track record delivering ERP/CRM modules, ticketing systems, and marketing pages with strong UX, plus a B.Sc. in Computer Science (CGPA 3.69/4.0) and multiple academic awards.`,
   experience: [
     {
-      role: 'IT Operations Specialist',
+      role: 'Full-Stack Developer',
       company: 'Alam Al-Jlod Alragyah Est.',
       date: 'Jul 2025 – Present',
       location: 'Jeddah, Saudi Arabia',

@@ -11,53 +11,69 @@ const resumeData = {
     linkedin: 'https://linkedin.com/in/abdulaziz-bahaj',
     github: 'https://github.com/AbdulazizBaHaj',
     SCE: 'https://drive.google.com/file/d/149QWGQh8x2isv_cVuQXTBvo16R_NlVUU/view?usp=sharing',
+    CV: 'https://drive.google.com/file/d/1TRehvMIMOrktrhKVrKZLQlRpLbil-uAZ/view?usp=sharing',
   },
-  summary: `Front-End Developer with expertise in Angular, React, and TypeScript, specializing in responsive, high-performance web applications. Proven experience building mobile-friendly interfaces using modern UI frameworks, with strong skills in RxJS state management and API integration. Adept at Agile collaboration and delivering clean, maintainable code in fast-paced environments. Holds a B.Sc. in Computer Science (Network & Security) with a CGPA of 3.69/4.0, Dean’s Award for Academic Excellence, and multiple certifications including Responsive Web Design and Cisco CCNA.`,
+  summary: `Front-End & Full-Stack Developer with 3+ years of experience building responsive web apps and internal tools using React, Angular, Node.js, and TypeScript. Led development of purchase-order, e‑invoicing, and warehouse systems that streamlined operations, reduced manual data entry, and improved visibility for sales and management teams. Proven track record delivering ERP/CRM modules, ticketing systems, and marketing pages with strong UX, plus a B.Sc. in Computer Science (CGPA 3.69/4.0) and multiple academic awards.`,
   experience: [
     {
       role: 'IT Operations Specialist',
       company: 'Alam Al-Jlod Alragyah Est.',
-      date: 'Feb 2024 – Present',
+      date: 'Jul 2025 – Present',
       location: 'Jeddah, Saudi Arabia',
       points: [
-        'Led digital transformation from paper-based operations to ZATCA-compliant e-invoicing system, unifying products, warehouse inventory, and billing across 2 branches',
-        'Procured and configured central server, POS PCs, and e-invoice provider integration for seamless branch connectivity, enabling real-time stock tracking and sales automation',
-        'Automated warehouse management (stocks and sales tracking), significantly reducing reconciliation time and improving inventory accuracy',
-        'Served as primary IT troubleshooter and trainer, onboarding non-technical staff to digital workflows and eliminating paper dependency',
+        'Architected and developed a full-stack web system to manage international purchase orders, digitizing forms, manager approvals, government submissions, and document re-uploads so the sales team and management could track each PO end-to-end.',
+        'Led development of internal tools using React and Node.js to streamline sales, warehousing, and document workflows for the commercial team.',
+        'Built a mobile-friendly sales billing app that let sales reps create bills on their phones, with a management view for monitoring issued invoices and follow-up.',
+        'Implemented a CSV-generation tool for warehouse in/out movements that could be imported into the ERP, reducing manual data entry and mismatched stock records.',
+        'Created an online PDF letter generator with rich text editing and branded watermark templates, standardizing official company correspondence and saving time on formatting.',
+      ],
+    },
+    {
+      role: 'IT Operations Specialist',
+      company: 'Alam Al-Jlod Alragyah Est.',
+      date: 'Jan 2025 – Jun 2025',
+      location: 'Jeddah, Saudi Arabia',
+      points: [
+        'Led digital transformation from paper-based operations to ZATCA-compliant e-invoicing system across two branches.',
+        'Procured/configured central server, POS systems, and e-invoice integration for real-time stock/sales tracking.',
+        'Reduced reconciliation time and improved inventory accuracy by automating warehouse management processes.',
+        'Eliminated paper dependency company-wide by training non-technical staff on digital workflows.',
       ],
     },
     {
       role: 'Frontend Developer (Contract)',
       company: 'Almajdouie Group',
-      date: 'Jul 2023 – Sep 2023',
+      date: 'Aug 2023 – Nov 2024',
       location: 'Remote',
       points: [
-        'Delivered fully responsive marketing landing page using Laravel Blade and Bootstrap within a 3-month contract, ensuring seamless experience across 5+ device breakpoints',
-        'Improved lead generation performance by implementing interactive UI components and optimizing conversion flow based on UX/UI design specifications',
-        'Collaborated with Development Team Lead and marketing team to maintain brand consistency and meet all project milestones on schedule',
+        'Delivered fully responsive marketing landing page using Laravel Blade and Bootstrap within 4-month contract.',
+        'Collaborated with Development Team Lead and marketing team to meet UX specs and project milestones.',
+        'Improved lead generation performance by implementing interactive UI components and conversion flow optimization.',
+        'Achieved seamless experience across 5+ device breakpoints through responsive design and testing.',
       ],
     },
     {
       role: 'Angular Developer (Contract – Co-op)',
       company: 'Almajdouie Group',
-      date: 'May 2023 – Jun 2023',
+      date: 'Apr 2024 – Jul 2024',
       location: 'Remote',
       points: [
-        'Enhanced internal ticketing and queuing system using Angular 14, implementing real-time updates that improved ticket processing visibility and streamlined workflows',
-        'Optimized system performance by building scalable, reusable components and implementing efficient RxJS operators for state management',
-        'Collaborated with Technical Project Manager, stakeholders, and UI/UX team to refine component usability, delivering improvements within the 2-month co-op period',
+        'Enhanced internal ticketing/queuing system using Angular with real-time updates and RxJS state management.',
+        'Partnered with Technical PM and UI/UX team to refine component usability within 4-month co-op.',
+        'Improved ticket processing visibility and workflow efficiency through scalable component implementation.',
+        'Optimized system performance by leveraging efficient RxJS operators for state management.',
       ],
     },
     {
       role: 'Frontend Developer – Angular & Ionic',
       company: 'BigLedger Sdn. Bhd.',
-      date: 'Aug 2022 – Feb 2023',
+      date: 'Feb 2023 – Feb 2024',
       location: 'Selangor, Malaysia',
       points: [
-        'Developed responsive, mobile-friendly interfaces for a cloud-native ERP/CRM platform using Angular, Ionic, and HTML/CSS across 4 industry-specific modules (Retail POS, Inventory, Digital CRM, Manufacturing) serving 100+ enterprise clients',
-        'Implemented advanced MVVM-based search functionality across 6+ ERP/CRM modules, improving data retrieval speed and enhancing user experience for complex queries',
-        'Delivered 15+ features and bug fixes over a 6-month period while collaborating with 4 backend developers in an Agile environment, maintaining high code quality standards',
-        'Optimized application performance for iOS and Android platforms through QA testing and data analysis using DBeaver, ensuring reliability across mobile devices',
+        'Developed responsive interfaces for cloud-native ERP/CRM platform across 4 modules serving 100+ enterprise clients.',
+        'Collaborated with 4 backend developers in Agile environment to deliver 15+ features and bug fixes.',
+        'Improved data retrieval speed and UX by implementing MVVM-based search across 6+ modules.',
+        'Ensured iOS/Android reliability through QA testing and DBeaver performance analysis.',
       ],
     },
   ],
@@ -77,7 +93,7 @@ const resumeData = {
   skills: {
     Languages: 'JavaScript, TypeScript, PHP',
     'Frontend Frameworks & Libraries':
-      'Angular, React, Ionic, Bootstrap, Laravel Blade',
+      'Angular, React, Ionic, Bootstrap, Laravel Blade, Node.js',
     'Markup & Styling': 'HTML, CSS',
     'State Management': 'RxJS, Angular Services, MVVM Pattern',
     'Tools & Platforms': 'Git, Jira',
@@ -506,6 +522,31 @@ export default function ResumePage() {
               className="flex items-center gap-2 hover:underline"
             >
               <GitHubIcon /> GitHub
+            </a>
+            <a
+              href={resumeData.contact.CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                {/* file-text icon */}
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>{' '}
+              Resume
             </a>
             <a
               href={resumeData.contact.SCE}

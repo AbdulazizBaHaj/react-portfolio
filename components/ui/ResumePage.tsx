@@ -42,8 +42,8 @@ const resumeData = {
     },
     {
       role: 'Frontend Developer (Contract)',
-      company: 'Almajdouie Group',
-      date: 'Aug 2023 – Nov 2024',
+      company: 'Almajdouie Motors',
+      date: 'Aug 2024 – Nov 2024',
       location: 'Remote',
       points: [
         'Delivered fully responsive marketing landing page using Laravel Blade and Bootstrap within 4-month contract.',
@@ -54,7 +54,7 @@ const resumeData = {
     },
     {
       role: 'Angular Developer (Contract – Co-op)',
-      company: 'Almajdouie Group',
+      company: 'Almajdouie Motors',
       date: 'Apr 2024 – Jul 2024',
       location: 'Remote',
       points: [
@@ -909,7 +909,7 @@ export default function ResumePage() {
           colorFront={
             isDarkMode ? 'hsl(320, 100%, 70%)' : 'hsl(220, 100%, 70%)'
           }
-          shape="cat"
+          shape="ripple"
           type="4x4"
           pxSize={3}
           offsetX={0}

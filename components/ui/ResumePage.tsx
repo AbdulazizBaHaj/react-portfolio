@@ -4,16 +4,16 @@ import { useState } from 'react';
 // --- DATA ---
 const resumeData = {
   name: 'Abdulaziz Ba Haj',
-  title: 'Front-End Developer (Angular, React)',
+  title: 'Front-End Developer (React, Angular)',
   contact: {
     phone: '+966 50 193-8374',
     email: 'abdulazizbahajworks@gmail.com',
     linkedin: 'https://linkedin.com/in/abdulaziz-bahaj',
     github: 'https://github.com/AbdulazizBaHaj',
     SCE: 'https://drive.google.com/file/d/149QWGQh8x2isv_cVuQXTBvo16R_NlVUU/view?usp=sharing',
-    CV: 'https://drive.google.com/file/d/1TRehvMIMOrktrhKVrKZLQlRpLbil-uAZ/view?usp=sharing',
+    CV: 'https://drive.google.com/file/d/1tS-9PgbaQKrm1rkDVVzsGTPenkEXs6A2/view?usp=sharing',
   },
-  summary: `Front-End & Full-Stack Developer with 3+ years of experience building responsive web apps and internal tools using React, Angular, Node.js, and TypeScript. Led development of purchase-order, e‑invoicing, and warehouse systems that streamlined operations, reduced manual data entry, and improved visibility for sales and management teams. Proven track record delivering ERP/CRM modules, ticketing systems, and marketing pages with strong UX, plus a B.Sc. in Computer Science (CGPA 3.69/4.0) and multiple academic awards.`,
+  summary: `Frontend Developer with 3+ years of hands‑on experience delivering Angular and React interfaces for ERP/CRM dashboards, e‑learning portals, and internal tools. Specializes in building responsive, maintainable UIs that connect cleanly to REST APIs, and I’ve also worked full‑stack when needed (Node.js/Laravel, MySQL) to ship features end‑to‑end. Strong academic background (CGPA 3.69, Dean’s Award, Dean’s List in 5 semesters) and proven track record working directly with sales, warehouse, and operations teams to improve real workflows.`,
   experience: [
     {
       role: 'Full-Stack Developer',
@@ -21,11 +21,9 @@ const resumeData = {
       date: 'Jul 2025 – Present',
       location: 'Jeddah, Saudi Arabia',
       points: [
-        'Architected and developed a full-stack web system to manage international purchase orders, digitizing forms, manager approvals, government submissions, and document re-uploads so the sales team and management could track each PO end-to-end.',
-        'Led development of internal tools using React and Node.js to streamline sales, warehousing, and document workflows for the commercial team.',
-        'Built a mobile-friendly sales billing app that let sales reps create bills on their phones, with a management view for monitoring issued invoices and follow-up.',
-        'Implemented a CSV-generation tool for warehouse in/out movements that could be imported into the ERP, reducing manual data entry and mismatched stock records.',
-        'Created an online PDF letter generator with rich text editing and branded watermark templates, standardizing official company correspondence and saving time on formatting.',
+        'Built internal web applications for purchase orders, sales billing, warehouse inventory, and document workflows using React, Node.js, and TypeScript, replacing scattered Excel sheets and paper forms across two retail branches.',
+        'Integrated Frontend UIs with ZATCA‑compliant e‑invoicing and existing ERP‑style workflows so invoices, stock movements, and payments stay synchronized without double entry',
+        'Collaborated with sales, warehouse, and management stakeholders to turn informal requirements into simple, task‑focused UI flows, iterating quickly based on feedback from non‑technical users.',
       ],
     },
     {
@@ -34,59 +32,57 @@ const resumeData = {
       date: 'Jan 2025 – Jun 2025',
       location: 'Jeddah, Saudi Arabia',
       points: [
-        'Led digital transformation from paper-based operations to ZATCA-compliant e-invoicing system across two branches.',
-        'Procured/configured central server, POS systems, and e-invoice integration for real-time stock/sales tracking.',
-        'Reduced reconciliation time and improved inventory accuracy by automating warehouse management processes.',
-        'Eliminated paper dependency company-wide by training non-technical staff on digital workflows.',
+        'Led the transition from paper‑based operations to a fully digital, ZATCA‑compliant e‑invoicing and warehouse tracking setup across two retail branches, giving management real‑time visibility into stock and sales instead of end‑of‑day reconciliation.',
+        'Procured and configured central servers, POS systems, and network infrastructure, and coordinated e‑invoicing integrations so sales and warehouse teams could issue invoices and update inventory directly in the system.',
+        'Trained staff on new digital workflows and tools, creating simple guides and hands‑on sessions that reduced dependence on paper forms and improved the accuracy of billing and inventory records.',
       ],
     },
     {
-      role: 'Frontend Developer (Contract)',
+      role: 'Frontend Developer (Laravel) - Contract',
       company: 'Almajdouie Motors',
       date: 'Aug 2024 – Nov 2024',
       location: 'Remote',
       points: [
-        'Delivered fully responsive marketing landing page using Laravel Blade and Bootstrap within 4-month contract.',
-        'Collaborated with Development Team Lead and marketing team to meet UX specs and project milestones.',
-        'Improved lead generation performance by implementing interactive UI components and conversion flow optimization.',
-        'Achieved seamless experience across 5+ device breakpoints through responsive design and testing.',
+        'Delivered a marketing landing page and updated admin dashboards using Laravel Blade, PHP, Bootstrap, HTML5, and CSS3 within a 4‑month contract.',
+        'Reworked the underlying MySQL schema and Laravel models to improve normalization, remove redundant tables, and make reporting on classes, enrollments, and submissions more reliable.',
+        'Collaborated closely with the team lead, backend developer, and designer to align database changes, UI flows, and release milestones with product and marketing goals.',
+        'Optimized the conversion flow and cross‑device experience (desktop, tablet, and mobile) so landing pages and dashboards felt smooth and consistent across multiple breakpoints.',
       ],
     },
     {
-      role: 'Angular Developer (Contract – Co-op)',
+      role: 'Frontend Developer (Angular) - Contract – Co-op',
       company: 'Almajdouie Motors',
       date: 'Apr 2024 – Jul 2024',
       location: 'Remote',
       points: [
-        'Enhanced internal ticketing/queuing system using Angular with real-time updates and RxJS state management.',
-        'Partnered with Technical PM and UI/UX team to refine component usability within 4-month co-op.',
-        'Improved ticket processing visibility and workflow efficiency through scalable component implementation.',
-        'Optimized system performance by leveraging efficient RxJS operators for state management.',
+        'Developed responsive Angular front ends for internal ticketing and business tools, building reusable components for dashboards, forms, and tables using Angular, TypeScript, HTML5, and CSS3.',
+        'Integrated the UI with REST APIs, handling loading/error states and data transformations on the client side so users could see up‑to‑date ticket and status information without manual refreshes.',
+        'Used RxJS to manage asynchronous data streams and real‑time updates in the ticketing workflow, improving the responsiveness and reliability of status changes and notifications.',
+        'Collaborated with backend and QA in Agile sprints, participating in code reviews and iterating on UI/UX based on feedback from support and operations teams.',
       ],
     },
     {
-      role: 'Frontend Developer – Angular & Ionic',
+      role: 'Frontend Developer (Angular & Ionic)',
       company: 'BigLedger Sdn. Bhd.',
       date: 'Feb 2023 – Feb 2024',
       location: 'Selangor, Malaysia',
       points: [
-        'Developed responsive interfaces for cloud-native ERP/CRM platform across 4 modules serving 100+ enterprise clients.',
-        'Collaborated with 4 backend developers in Agile environment to deliver 15+ features and bug fixes.',
-        'Improved data retrieval speed and UX by implementing MVVM-based search across 6+ modules.',
-        'Ensured iOS/Android reliability through QA testing and DBeaver performance analysis.',
+        'Built responsive, mobile‑friendly interfaces for a cloud‑native ERP/CRM platform using Angular, Ionic, HTML5, and CSS3 across modules such as Retail POS, Inventory, Digital CRM, and Manufacturing used by enterprise clients.',
+        'Implemented fast, MVVM‑style search and filtering across multiple modules so users could quickly find products, customers, and documents inside large datasets without full page reloads.',
+        'Regularly identified and resolved UI and integration issues across ERP modules, improving stability and reducing user‑reported problems in production.',
+        'Optimized iOS and Android performance by profiling slow views, reducing unnecessary network calls, and collaborating with QA to validate improvements on real devices.',
+        'Worked closely with backend developers and product owners to refine requirements, adjust APIs, and ensure new UI features matched business workflows in the ERP system.',
       ],
     },
   ],
   education: [
     {
       institution: 'Universiti Teknologi Malaysia (UTM)',
-      degree: 'Bachelor of Computer Science (Network & Security)',
+      degree: 'Bachelor`s Degree in Computer Science (Network & Security)',
       date: 'Aug 2018 – Feb 2023',
       location: 'Johor Bahru, Malaysia',
       points: [
-        'Graduated with CGPA of 3.69 out of 4',
-        'Recipient of the Dean’s Award for Academic Excellence',
-        'Earned Dean’s List Honors in 5 semesters',
+        'CGPA: 3.69/4.00; Dean’s List (5 semesters); Dean’s Award for academic excellence',
       ],
     },
   ],
@@ -99,7 +95,7 @@ const resumeData = {
     'Tools & Platforms': 'Git, Jira',
     Practices:
       'Agile/Scrum, Responsive Design, QA Testing, Performance Optimization',
-    'Spoken Languages': 'Arabic (Native), English (Professional Proficiency)',
+    'Spoken Languages': 'Arabic (Native), English (B2)',
   },
   awards: [
     "Dean's Award, Universiti Teknologi Malaysia – Academic Excellence (2023)",
@@ -909,14 +905,14 @@ export default function ResumePage() {
           colorFront={
             isDarkMode ? 'hsl(320, 100%, 70%)' : 'hsl(220, 100%, 70%)'
           }
-          shape="ripple"
+          shape="simplex"
           type="4x4"
           pxSize={3}
           offsetX={0}
           offsetY={0}
           scale={0.8}
           rotation={0}
-          speed={0.1}
+          speed={0.5}
         />
       </div>
     </div>
